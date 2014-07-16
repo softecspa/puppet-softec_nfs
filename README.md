@@ -7,7 +7,8 @@ wrapper of puppet-nfs module with use of monit and default mount options
 
 1. [Overview](#overview)
 2. [Usage - Configuration options and additional functionality](#usage)
-3. [Default config options](#default-config-options)
+3. [Setup Requirements](#setup-requirements)
+4. [Default config options](#default-config-options)
 
 ##Overview
 Actually module only contain define softec\_nfs::mount as wrapper  of nfs::mount. Two optional parameter are present for managing monitoring by monit.
@@ -22,6 +23,9 @@ To enable monit monitoring
     }
 
 Use parameter monit\_action to override default action
+
+##Setup Requirements
+This module depends on softecspa/puppet-nfs
 
 ##Default config options
 By default:
