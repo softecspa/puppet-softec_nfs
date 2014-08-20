@@ -1,2 +1,2 @@
-/home_test 10.0.0.0/8(rw,hide,insecure,no_subtree_check,no_root_squash)
-/var/www_test 10.0.0.0/8(rw,hide,insecure,no_subtree_check,no_root_squash)
+/home 10.0.0.0/8(rw,hide,insecure,no_subtree_check,no_root_squash)
+/var/www 10.0.0.0/8(rw,hide,insecure,no_subtree_check,no_root_squash)
