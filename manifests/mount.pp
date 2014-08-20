@@ -3,7 +3,6 @@ define softec_nfs::mount (
   $share,
   $mountpoint       = '',
   $ensure           = present,
-  $server_options   = '',
   $monit            = false,
   $monit_action     = '/usr/local/sbin/puppet-run -f1 -c',
   $client_options   = $::nfs_mount_options,
@@ -19,7 +18,6 @@ define softec_nfs::mount (
     share           => $share,
     mountpoint      => $mountpoint,
     ensure          => $ensure,
-    server_options  => $server_options,
     client_options  => $client_options,
   }
 
